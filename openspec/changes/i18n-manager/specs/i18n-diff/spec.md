@@ -33,9 +33,9 @@
 ```bash
 $ i18n-cli diff public-export.xlsx
 📝 New entries (12):
-  + ebanking.profile.avatar        | zh: 用户头像 | en: Avatar
-  + ebanking.settings.theme        | zh: 主题设置 | en: Theme Settings
-  + channel.create.title           | zh: 创建渠道 | en: Create Channel
+  + ebankingPermission.profile.avatar        | zh: 用户头像 | en: Avatar
+  + ebankingPermission.settings.theme        | zh: 主题设置 | en: Theme Settings
+  + channelPermission.create.title           | zh: 创建渠道 | en: Create Channel
 ```
 
 ### Requirement: 检测修改词条
@@ -51,7 +51,7 @@ $ i18n-cli diff public-export.xlsx
 ```bash
 $ i18n-cli diff public-export.xlsx
 ✏️  Modified entries (3):
-  ~ ebanking.login.title
+  ~ ebankingPermission.login.title
       zh: "用户登录" → "用户登录2"
       en: "User Login" → "User Login v2"
 ```
@@ -107,13 +107,13 @@ $ i18n-cli diff public-export.xlsx --verbose
 
 📝 NEW ENTRIES (12)
 ───────────────────────────────────────────────────────────────
-  + ebanking.profile.avatar        | zh: 用户头像 | en: Avatar
-  + ebanking.settings.theme        | zh: 主题设置 | en: Theme Settings
+  + ebankingPermission.profile.avatar        | zh: 用户头像 | en: Avatar
+  + ebankingPermission.settings.theme        | zh: 主题设置 | en: Theme Settings
   ...
 
 ✏️  MODIFIED ENTRIES (3)
 ───────────────────────────────────────────────────────────────
-  ~ ebanking.login.title
+  ~ ebankingPermission.login.title
       zh: "用户登录" → "用户登录2"
       en: "User Login" → "User Login v2"
   ...
@@ -149,14 +149,14 @@ $ i18n-cli diff public-export.xlsx --output diff-result.json
   },
   "newEntries": [
     {
-      "key": "ebanking.profile.avatar",
+      "key": "ebankingPermission.profile.avatar",
       "zh": "用户头像",
       "en": "Avatar"
     }
   ],
   "modifiedEntries": [
     {
-      "key": "ebanking.login.title",
+      "key": "ebankingPermission.login.title",
       "old": { "zh": "用户登录", "en": "User Login" },
       "new": { "zh": "用户登录2", "en": "User Login v2" }
     }

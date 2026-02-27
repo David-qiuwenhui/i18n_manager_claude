@@ -20,7 +20,7 @@
 $ i18n-cli validate
 ❌ Validation failed:
   - Duplicate key 'common.submit' found in:
-    * i18n/ebanking.json
+    * i18n/ebankingPermission.json
     * i18n/common.json
 ```
 
@@ -41,7 +41,7 @@ $ i18n-cli validate
 ```bash
 $ i18n-cli validate
 ❌ Validation failed:
-  - Missing translation for 'ebanking.login.title':
+  - Missing translation for 'ebankingPermission.login.title':
     * zh-CN: "用户登录" ✓
     * en-US: ✗ (missing)
 ```
@@ -76,9 +76,9 @@ $ i18n-cli validate
 ```bash
 $ i18n-cli validate
 ❌ Validation failed:
-  - Invalid key format 'ebankingLoginTitle':
-    * Expected: lowercase with dots (e.g., 'ebanking.login.title')
-    * Found in: i18n/ebanking.json
+  - Invalid key format 'ebankingPermissionLoginTitle':
+    * Expected: lowercase with dots (e.g., 'ebankingPermission.login.title')
+    * Found in: i18n/ebankingPermission.json
 ```
 
 ### Requirement: 全局词条收集
@@ -110,9 +110,9 @@ $ i18n-cli validate
 ```bash
 $ i18n-cli validate
 ❌ Validation failed with 3 errors:
-  1. Duplicate key 'common.submit' in i18n/ebanking.json and i18n/common.json
-  2. Missing en-US translation for 'channel.create.title'
-  3. Invalid key format 'ebankingLoginTitle' in i18n/ebanking.json
+  1. Duplicate key 'common.submit' in i18n/ebankingPermission.json and i18n/common.json
+  2. Missing en-US translation for 'channelPermission.create.title'
+  3. Invalid key format 'ebankingPermissionLoginTitle' in i18n/ebankingPermission.json
 ```
 
 ### Requirement: 校验退出码

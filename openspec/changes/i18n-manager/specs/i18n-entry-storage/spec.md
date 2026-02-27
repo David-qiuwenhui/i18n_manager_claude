@@ -5,13 +5,13 @@
 ### Requirement: 按业务模块组织词条文件
 系统 SHALL 支持按业务功能模块组织词条文件，每个模块对应一个独立的 JSON 文件。
 
-#### Scenario: 创建 ebanking 模块词条文件
-- **WHEN** 开发者创建 `i18n/ebanking.json` 文件
+#### Scenario: 创建 ebankingPermission 模块词条文件
+- **WHEN** 开发者创建 `i18n/ebankingPermission.json` 文件
 - **THEN** 系统应识别该文件为网银业务模块的词条文件
 - **AND** 文件应包含网银相关的中英文词条键值对
 
-#### Scenario: 创建 channel 模块词条文件
-- **WHEN** 开发者创建 `i18n/channel.json` 文件
+#### Scenario: 创建 channelPermission 模块词条文件
+- **WHEN** 开发者创建 `i18n/channelPermission.json` 文件
 - **THEN** 系统应识别该文件为渠道业务模块的词条文件
 - **AND** 文件应包含渠道相关的中英文词条键值对
 
@@ -37,12 +37,12 @@
 ```json
 {
   "zh-CN": {
-    "ebanking.login.title": "用户登录",
-    "ebanking.login.button": "登录"
+    "ebankingPermission.login.title": "用户登录",
+    "ebankingPermission.login.button": "登录"
   },
   "en-US": {
-    "ebanking.login.title": "User Login",
-    "ebanking.login.button": "Login"
+    "ebankingPermission.login.title": "User Login",
+    "ebankingPermission.login.button": "Login"
   }
 }
 ```
@@ -53,7 +53,7 @@
 #### Scenario: 有效键名
 - **WHEN** 定义词条键
 - **THEN** 键名应使用小写字母和点号
-- **AND** 格式应为 `模块.功能.操作` 如 `ebanking.login.title`
+- **AND** 格式应为 `模块.功能.操作` 如 `ebankingPermission.login.title`
 
 #### Scenario: 键名唯一性范围
 - **WHEN** 在不同模块文件中定义词条
@@ -71,8 +71,8 @@
 #### Scenario: 多模块目录结构示例
 ```
 i18n/
-├── ebanking.json
-├── channel.json
+├── ebankingPermission.json
+├── channelPermission.json
 ├── physicalPermission.json
 └── common.json
 ```

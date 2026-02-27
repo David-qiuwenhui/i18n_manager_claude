@@ -6,7 +6,7 @@
 
 ## What Changes
 
-- **新增多模块词条文件组织**: 按业务功能模块（`ebanking`, `channel`, `physicalPermission`, `common`）拆分词条文件，每个模块维护独立的 JSON 文件，便于团队协作维护
+- **新增多模块词条文件组织**: 按业务功能模块（`ebankingPermission`, `channelPermission`, `physicalPermission`, `common`）拆分词条文件，每个模块维护独立的 JSON 文件，便于团队协作维护
 - **新增全局词条校验**: 跨模块收集所有词条信息，执行键名唯一性校验（避免跨模块重复定义）、翻译完整性校验（中英文必须同时存在）、格式规范校验
 - **新增公服词条差异对比**: 支持将公服系统导出的词条文件与代码仓库词条进行对比，识别新增、修改、删除的词条，便于同步管理
 - **新增词条导出功能**: 将代码仓库中的词条自动生成 Excel 文件，通过 npm script 一键导出，供手动导入到公服系统
@@ -16,7 +16,7 @@
 
 ### New Capabilities
 
-- `i18n-entry-storage`: I18N词条的代码化存储能力，支持按业务功能模块（`ebanking`, `channel`, `physicalPermission`, `common`）组织 JSON 格式的词条文件，每个文件包含中英文键值对
+- `i18n-entry-storage`: I18N词条的代码化存储能力，支持按业务功能模块（`ebankingPermission`, `channelPermission`, `physicalPermission`, `common`）组织 JSON 格式的词条文件，每个文件包含中英文键值对
 - `i18n-validation`: I18N词条全局校验能力，跨模块收集所有词条信息，执行键名唯一性校验、翻译完整性校验、格式规范校验
 - `i18n-export`: I18N词条导出能力，将代码仓库中的词条合并并转换为公服系统可导入的 Excel 文件格式
 - `i18n-diff`: I18N词条差异对比能力，对比代码仓库词条与公服导出词条之间的差异，识别新增、修改、删除的词条
@@ -30,7 +30,7 @@ _(无现有能力需要修改，这是一个全新的工具)_
 ### 受影响的系统
 
 - **前端项目开发流程**: 开发者通过代码方式管理词条，不再直接操作公服系统
-- **词条文件结构**: 项目中新增 `i18n/` 目录，按业务模块组织多个 JSON 文件（`ebanking.json`, `channel.json`, `physicalPermission.json`, `common.json`）
+- **词条文件结构**: 项目中新增 `i18n/` 目录，按业务模块组织多个 JSON 文件（`ebankingPermission.json`, `channelPermission.json`, `physicalPermission.json`, `common.json`）
 
 ### 技术依赖
 

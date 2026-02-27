@@ -26,9 +26,9 @@
 #### Scenario: Excel文件内容示例
 | Key | zh-CN | en-US |
 |-----|-------|-------|
-| ebanking.login.title | 用户登录 | User Login |
-| ebanking.login.button | 登录 | Login |
-| channel.create.title | 创建渠道 | Create Channel |
+| ebankingPermission.login.title | 用户登录 | User Login |
+| ebankingPermission.login.button | 登录 | Login |
+| channelPermission.create.title | 创建渠道 | Create Channel |
 
 ### Requirement: Excel 文件命名
 系统 SHALL 使用时间戳生成的文件名，避免覆盖历史导出文件。
@@ -98,8 +98,8 @@ $ i18n-cli export --verbose
 ✅ Export successful!
   - Total entries: 150
   - By module:
-    * ebanking.json: 52 entries
-    * channel.json: 31 entries
+    * ebankingPermission.json: 52 entries
+    * channelPermission.json: 31 entries
     * physicalPermission.json: 28 entries
     * common.json: 39 entries
   - Output: i18n-export-20250215-143022.xlsx
